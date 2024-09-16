@@ -8,120 +8,113 @@
 <body>
     <!--here starts the first form-->
     <h1>Harvard University Application Form</h1>
-    <form>
-        <div>
-            <h3>Personal Information</h3>
-            <label for="name">Name:</label>
-            <input type="text" name="name" required>
-        </div>
-        <div>
-            <label for="surname">Surname:</label>
-            <input type="text" name="surname" required>
-        </div>
-        <div>
-            <label for="email">Email:</label>
-            <input type="text" name="email" required>
-        
-        </div>
-        
-        <div>
-            <label for="identity number">Identity Number:</label>
-            <input type="text" name="identity number">
-        </div>
-        <div>
-            <label for="Nationality">Nationality:</label>
-            <input type="text" name="Nationality" >
-        </div>
-        <div>
-            <label for="placeofbirth">Place Of Birth:</label>
-            <input type="text" name="placeofbirth">
-        </div>
-        <div>
-            <label for="dateofbirth">Date Of Birth:</label>
-            <input type="date" >
-        </div>
-          <div>
-            <label for="phonenumber">Phone Number</label>
-            <input type="tel" id="phone" name="phone" placeholder="+995-123-456-789">
-           </div>
-        <div>
-        </form>
-       
+<form>
+   <div>
+      <h3>Personal Information</h3>
+      <label for="name">Name:</label>
+      <input type="text" name="name" required>
+   </div>
+   <div>
+      <label for="surname">Surname:</label>
+      <input type="text" name="surname" required>
+   </div>
+   <div>
+      <label for="email">Email:</label>
+      <input type="email" name="email" required>
+   </div>
+   <div>
+      <label for="identity number">Identity Number:</label>
+      <input type="text" name="identity number">
+   </div>
+   <div>
+      <label for="Nationality">Nationality:</label>
+      <input type="text" name="Nationality" >
+   </div>
+   <div>
+      <label for="placeofbirth">Place Of Birth:</label>
+      <input type="text" name="placeofbirth">
+   </div>
+   <div>
+      <label for="dateofbirth">Date Of Birth:</label>
+      <input type="date" >
+   </div>
+   <div>
+      <label for="phonenumber">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="+995-123-456-789">
+   </div>
+   <div>
+</form>
+<!--here starts the second form-->
+<form >
+   <div>
+      <h3>Education Information</h3>
+      <label for="Educational Level">Educational Level:</label>
+      <select id="educational level" name="educational level">
+         <option value="Middle School">Middle School</option>
+         <option value="High School">High School</option>
+         <option value="College">College</option>
+         <option value="University">University</option>
+      </select>
+      <input type="submit">
+   </div>
+   <div>
+      <label for="country">Country:</label>
+      <input type="text" name="country" id="country">
+   </div>
+   <div>
+      <label for="school">School:</label>
+      <input type="text" name="School">
+   </div>
+   <div>
+      <label for="field">Field:</label>
+      <input type="text">
+   </div>
+   <div>
+      <label for="Educational Status">Educational Status:</label>
+      <select name="Status" >
+         <option value="Finished">Finished</option>
+         <option value="Ongoing">Ongoing</option>
+      </select>
+      <input type="submit">
+   </div>
+   <div>
+      <label for="date">Start Date:</label>
+      <input type="date" >
+   </div>
+   <div>
+      <label for="date">Graduation Date:</label>
+      <input type="date">
+   </div>
+   <div>
+      <label for="GPA">GPA:</label>
+      <input type="number" name="GPA" min="1" max="5" step="0.5">
+   </div>
+   <div>
+      <label for="diploma">Diploma:</label>
+      <input type="file">
+   </div>
+</form>
 
-       <!--here starts the second form-->
-       <form >
-        <div>
-           <h3>Education Information</h3>
-           <label for="Educational Level">Educational Level:</label>
-           <input type="text">
-           <select name="educational level">
-            <option value="Middle School"></option>
-            <option value="High School"></option>
-            <option value="College"></option>
-            <option value="University"></option>
-           </select>
-        </div>
-        <div>
-            <label for="country">Country:</label>
-            <input type="text" name="country" id="country">
-        </div>
-        <div>
-            <label for="school">School:</label>
-            <input type="text" name="School">
-        </div>
-        <div>
-            <label for="field">Field:</label>
-            <input type="text">
-        </div>
-        <div>
-            <label for="Educational Status">Educational Status:</label>
-            <input type="text">
-            <select name="Status" >
-                <option value="Finished"></option>
-                <option value="Ongoing"></option>
-            </select>
-        </div>
-        <div>
-            <label for="date">Start Date:</label>
-            <input type="date" >
-        </div>
-        <div>
-            <label for="date">Graduation Date:</label>
-            <input type="date">
-        </div>
-        <div>
-            <label for="GPA">GPA:</label>
-            <input type="number" name="GPA" min="1" max="5" step="0.5">
-        </div>
-        <div>
-            <label for="diploma">Diploma:</label>
-            <input type="file">
-        </div>
-    </form>
-    <!--here ends the second form-->
+<!--here starts the third form-->
+<form>
+   <div>
+      <h3>Social Activities</h3>
+      <label for="">Award, Project , Certificate  </label>
+      <input type="file">
+   </div>
+   <div>
+      <label for="description">Description:</label>
+   </div>
+   <div>
+      <textarea maxlength="50" cols="20" rows="5">
+      </textarea>
+   </div>
+</form>
+<div>
+    <input type="submit" value="save">
+    <input type="submit" value="submit"  >
+ </div>
+<!--here ends the third form-->
 
-     <!--here starts the third form-->
-     <form>
-        <div>
-            <h3>Social Activities</h3>
-            <label for="">Award, Project , Certificate  </label>
-            <input type="file">
-          
-        </div>
-        <div>
-            <label for="description">Description:</label>
-        </div>
-       <div>
-        
-        <textarea maxlength="50" cols="20" rows="5">
-            
-        </textarea>
-       </div>
-     </form>
-     <!--here ends the third form-->
-     <div>
-        <input type="submit" value="save">
-        <input type="submit" value="submit"  >
-     </div>
 </body>
 </html>
